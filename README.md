@@ -4,6 +4,16 @@
 
 **Disciplina:** Desenvolvimento e Integração de Aplicações Web (DIAW) — PUC Minas · **Laboratório 02**
 
+## 🌐 Hospedagem
+
+| Parte | Onde | Link |
+|-------|------|------|
+| **Front-end (React + Vite)** | **GitHub Pages** | https://jteixeiraz.github.io/lab02-sistema-aluguel-de-carros/ |
+| Banco de dados | Supabase (PostgreSQL) | — |
+| **Back-end (Spring Boot)** | **Não hospedado** — roda localmente | `http://localhost:8080` |
+
+> ⚠️ O GitHub Pages serve apenas arquivos estáticos, portanto **somente o front-end está publicado lá**. O back-end Spring Boot precisa estar em execução (localmente ou em um serviço de hospedagem Java) para que login e pedidos funcionem. Para apontar o site publicado para um back-end público, defina a variável de repositório `API_URL` (Settings → Secrets and variables → Actions → Variables) e rode o workflow *Deploy front-end no GitHub Pages*. O deploy é automático a cada push em `frontend/` ([workflow](.github/workflows/pages.yml)).
+
 ## 🚧 Status do Projeto
 
 Protótipo funcional: autenticação, CRUD de cliente, CRUD de automóveis e fluxo de pedidos de aluguel.
