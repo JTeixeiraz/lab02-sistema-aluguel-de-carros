@@ -57,7 +57,7 @@ export default function Pedidos() {
   const carregar = useCallback(async () => {
     try {
       const [p, a] = await Promise.all([api('/pedidos'), api('/automoveis')])
-      setPedidos(p); setAutomoveis(a)
+      setPedidos([...p].sort((x, y) => y.id - x.id)); setAutomoveis(a)
     } catch (e) { setErro(e.message) }
   }, [])
   useEffect(() => { carregar() }, [carregar])
