@@ -39,7 +39,7 @@ public class Cliente {
 
     private String profissao;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "cliente_id")
     private List<Empregador> empregadores = new ArrayList<>();
 }
