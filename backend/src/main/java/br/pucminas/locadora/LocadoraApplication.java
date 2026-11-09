@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class LocadoraApplication {
 
 	public static void main(String[] args) {
+		// Postgres/Supabase nao aceitam alias legado de fuso (ex.: Brazil/East)
+		java.util.TimeZone.setDefault(java.util.TimeZone.getTimeZone("America/Sao_Paulo"));
 		SpringApplication.run(LocadoraApplication.class, args);
 	}
 
