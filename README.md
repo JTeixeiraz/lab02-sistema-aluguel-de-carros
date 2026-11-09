@@ -53,6 +53,14 @@ AGENTE_CODIGO=codigo-de-convite-dos-agentes
 
 Front-end (`frontend/.env.example`): `VITE_API_URL=http://localhost:8080/api`
 
+Conexão com o Supabase (Project Settings → Database → *Session pooler*, compatível com IPv4):
+
+```env
+DB_URL=jdbc:postgresql://aws-0-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require
+DB_USER=postgres.<ID_DO_PROJETO>
+DB_PASSWORD=<senha definida ao criar o projeto>
+```
+
 > O esquema é criado automaticamente pelo Hibernate (`ddl-auto=update`). Nunca versione o arquivo `.env`.
 
 ### ⚡ Como Executar
