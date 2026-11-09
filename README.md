@@ -20,7 +20,7 @@ Protótipo funcional: autenticação, CRUD de cliente, CRUD de automóveis e flu
 
 ## 📚 Índice
 
-[Funcionalidades](#-funcionalidades-principais) · [Tecnologias](#-tecnologias-utilizadas) · [Arquitetura](#-arquitetura) · [Instalação](#-instalação-e-execução) · [Estrutura](#-estrutura-de-pastas) · [API](#-api) · [Modelagem](#-modelagem-uml) · [Autor](#-autores)
+[Funcionalidades](#-funcionalidades-principais) · [Tecnologias](#-tecnologias-utilizadas) · [Arquitetura](#-arquitetura) · [Instalação](#-instalação-e-execução) · [Estrutura](#-estrutura-de-pastas) · [API](#-api) · [Modelagem](#-modelagem-uml) · [Demonstração](#-demonstração) · [Autor](#-autores)
 
 ## ✨ Funcionalidades Principais
 
@@ -111,6 +111,25 @@ docs/      Casos de uso, histórias de usuário, classes e pacotes
 - [Casos de uso e histórias de usuário](docs/casos-de-uso.md)
 - [Diagrama de classes e estados do pedido](docs/diagrama-de-classes.md)
 - [Diagrama de pacotes](docs/diagrama-de-pacotes.md)
+
+## 🎥 Demonstração
+
+Prints do protótipo rodando localmente com o banco no Supabase.
+
+| Login | Cadastro de cliente |
+|---|---|
+| ![Login](docs/screenshots/01-login.png) | ![Cadastro](docs/screenshots/02-cadastro-cliente.png) |
+
+**Cliente** — novo pedido, acompanhamento do status e edição do cadastro:
+
+![Novo pedido](docs/screenshots/03-cliente-novo-pedido.png)
+![Pedidos e status](docs/screenshots/04-cliente-pedidos-status.png)
+![Meu cadastro](docs/screenshots/07-cliente-cadastro.png)
+
+**Agente (banco)** — avaliação de pedidos (aprovação registra o crédito) e gestão de automóveis:
+
+![Pedidos recebidos](docs/screenshots/05-agente-pedidos.png)
+![Automóveis](docs/screenshots/06-agente-automoveis.png)
 
 ## 👥 Autores
 
