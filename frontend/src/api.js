@@ -25,7 +25,7 @@ export async function api(caminho, { metodo = 'GET', corpo } = {}) {
   })
   if (res.status === 401 && sessao && !caminho.startsWith('/auth/')) {
     salvarSessao(null)
-    window.location.href = '/login'
+    window.location.hash = '#/login'
     throw new Error('Sessao expirada')
   }
   if (res.status === 204) return null
